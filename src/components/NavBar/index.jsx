@@ -14,15 +14,27 @@ const NavBar = () => {
             Mi Carrito Coder
           </Navbar.Brand>
           <Nav className="d-flex justify-content-center fs-3">
-            <Nav.Link href="/#">Inicio</Nav.Link>
+            <Nav.Link href="/#">Home</Nav.Link>
             <Nav.Link href="/#">Productos</Nav.Link>
             <Nav.Link href="/#">Nosotros</Nav.Link>
+            <Nav.Link href="/#">Contacto</Nav.Link>
           </Nav>
           <Nav>
             <Button variant="outline-info me-3">
               {" "}
-              <i className="fa fa-shopping-cart me-1"></i>Cart ( 0 )
+              <i className="fa fa-shopping-cart me-1"></i> ( 0 )
             </Button>
+            <Form className="d-flex me-4">
+              <Form.Control
+                type="search"
+                placeholder="Buscar"
+                className="me-2 fs-5 "
+                aria-label="Buscar"
+              />
+              <Button variant="outline-info">
+                <i className="fa fa-search"></i>
+              </Button>
+            </Form>
             <Button variant="outline-info me-2">
               {" "}
               <i className="fa fa-sign-in me-1"></i>Login
@@ -31,16 +43,6 @@ const NavBar = () => {
               {" "}
               <i className="fa fa-user-plus me-1"></i>Registrate
             </Button>
-
-            <Form className="d-flex me-4">
-              <Form.Control
-                type="search"
-                placeholder="Buscar"
-                className="me-2 fs-5 "
-                aria-label="Buscar"
-              />
-              <Button variant="outline-info">Buscar</Button>
-            </Form>
           </Nav>
         </Container>
       </Navbar>
