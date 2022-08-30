@@ -1,0 +1,19 @@
+.contenedor-botones {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.botones {
+  padding: 16px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 25px;
+}
+.display {
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
