@@ -1,52 +1,52 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
+import "../../data/products";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
+
   const handleAdd = () => {
     if (count < stock) {
       setCount(count + 1);
     } else {
-      alert("no hay stock disponible");
+      alert("No hay suficiente stock disponible");
     }
   };
 
-  const handleRest = () => {
-    if (count <= 0) {
-      alert("⚠ Ingresa Cantidades Superiores a 0");
-    } else {
-      setCount(count - 1);
-    }
+  const handleDecrement = () => {
+    //Desarrollo del decrement
   };
+
+  const addCart = () => {
+    onAdd(count);
+    setCount(initial);
+  };
+  //Montaje del componente
   useEffect(() => {
-    console.log("Se monto el ItemCount");
+    console.log("Se montó el ItemCount");
   }, []);
+
   useEffect(() => {
-    console.log("se actualiza el estado");
+    console.log("Se actualiza el estado!");
   }, [count]);
 
   return (
-    <div className="container border border-3 border-info rounded-pill my-5 p-5">
-      <div>
-        <h2 className="display bg-light rounded-pill p-5">{count}</h2>
-      </div>
-      <div className="contenedor-botones bg-light rounded-pill">
-        <button className="botones btn btn-dark text-info" onClick={handleAdd}>
-          {" "}
-          +{" "}
-        </button>
-        <button className="botones btn btn-dark text-info" onClick={handleRest}>
-          {" "}
-          -{" "}
-        </button>
-        <button
-          className="botones btn btn-dark text-info"
-          onClick={() => onAdd(count)}
-        >
-          {" "}
-          Agregar Al Carrito{" "}
-        </button>
-      </div>
+    <div className="border border-1 border-info rounded contenedor-botones bg-light rounded">
+      <button
+        className="botones btn btn-dark text-info"
+        onClick={handleDecrement}
+      >
+        {" "}
+        -{" "}
+      </button>
+      <h2>{count}</h2>
+      <button className="botones btn btn-dark text-info" onClick={handleAdd}>
+        +
+      </button>
+      <button className="botones btn btn-dark text-info" onClick={addCart}>
+        <i className="fa fa-shopping-cart me-1"></i>
+        Agregar
+      </button>
     </div>
   );
 };

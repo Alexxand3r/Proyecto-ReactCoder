@@ -8,13 +8,24 @@ import React from "react";
 const NavBar = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="border border-3 border-info">
+      <Navbar
+        bg="dark"
+        variant="dark"
+        className="border border-3 border-info nav_bar"
+      >
         <Container fluid>
           <Navbar.Brand href="#home" className="fs-2 fw-bold text-info ms-4">
-            Mi Carrito Coder
+            Mi Carrito Coder{" "}
+            <img
+              className=""
+              src="../../assets/dbs2.jpg"
+              alt="foto hero prueba"
+              width={50}
+            />
           </Navbar.Brand>
+
           <Nav className="d-flex justify-content-center fs-3">
-            <Nav.Link href="/#">Home</Nav.Link>
+            <Nav.Link href="/#">Inicio</Nav.Link>
             <Nav.Link href="/#">Productos</Nav.Link>
             <Nav.Link href="/#">Nosotros</Nav.Link>
             <Nav.Link href="/#">Contacto</Nav.Link>
