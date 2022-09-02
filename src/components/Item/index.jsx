@@ -2,9 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import ItemCount from "../ItemCount";
+// import ItemCount from "../ItemCount";
 import "./style.css";
-import { products } from "../../data/products";
+// import { products } from "../../data/products";
 const Item = ({ product }) => {
   return (
     <div className="my-1 mx-1 card-container">
@@ -17,8 +17,9 @@ const Item = ({ product }) => {
             <ListGroup.Item>Precio: $ {product.price}</ListGroup.Item>
             <ListGroup.Item>Stock: {product.stock}</ListGroup.Item>
           </ListGroup>
-          {/* <Button variant="primary">Agregar Carrito</Button> */}
-          <ItemCount />
+          {/* <ItemCount /> */}
+
+          <Button variant="dark">Agregar Carrito</Button>
         </Card.Body>
       </Card>
     </div>

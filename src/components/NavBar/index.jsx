@@ -15,13 +15,13 @@ const NavBar = () => {
       >
         <Container fluid>
           <Navbar.Brand href="#home" className="fs-2 fw-bold text-info ms-4">
-            Mi Carrito Coder{" "}
             <img
-              className=""
+              className="me-2"
               src="../../assets/dbs2.jpg"
               alt="foto hero prueba"
               width={50}
             />
+            Mi Carrito Coder
           </Navbar.Brand>
 
           <Nav className="d-flex justify-content-center fs-3">
