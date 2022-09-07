@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import React from "react";
+import CartWidget from "../CartWidget";
 
 const NavBar = () => {
   return (
@@ -31,10 +32,7 @@ const NavBar = () => {
             <Nav.Link href="/#">Contacto</Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="outline-info me-3">
-              {" "}
-              <i className="fa fa-shopping-cart me-1"></i> ( 0 )
-            </Button>
+            <CartWidget />
             <Form className="d-flex me-4">
               <Form.Control
                 type="search"

@@ -5,8 +5,10 @@
 }
 
 .botones {
+  font-size: 20px;
   font-weight: bold;
   margin: 5px;
   display: flex;
   align-items: center;
+  padding: 15px;
 }

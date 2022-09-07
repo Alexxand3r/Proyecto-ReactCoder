@@ -21,7 +21,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     onAdd(count);
     setCount(initial);
   };
-  //Montaje del componente
+
   useEffect(() => {
     console.log("Se montó el ItemCount");
   }, []);
@@ -31,7 +31,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   }, [count]);
 
   return (
-    <div className="border border-1 border-info rounded contenedor-botones bg-light rounded">
+    <div className="border border-1 border-info rounded contenedor-botones bg-light rounded p-3">
       <button
         className="botones btn btn-dark text-info"
         onClick={handleDecrement}
@@ -40,7 +40,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         -{" "}
       </button>
       <h2>{count}</h2>
-      <button className="botones btn btn-dark text-info" onClick={handleAdd}>
+      <button className="botones  btn btn-dark text-info" onClick={handleAdd}>
         +
       </button>
       <button className="botones btn btn-dark text-info" onClick={addCart}>
