@@ -1,5 +1,5 @@
 import React from "react";
-import dbs1 from "../../img/dbs1.jpg";
+//import dbs1 from "../../img/dbs1.jpg";
 
 import Carousel from "react-bootstrap/Carousel";
 const Home = () => {

@@ -1,3 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+.detail-img {
+  height: 80vh;
+}
 .descripcion {
   margin-top: 1rem;
   font-size: 1rem;
@@ -5,7 +16,6 @@
 }
 .precio {
   display: flex;
-  justify-content: end;
   font-size: 3rem;
   font-weight: bold;
   margin-right: 1.2rem;
@@ -13,4 +23,17 @@
 }
 .titulo {
   text-align: center;
+}
+.sub-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
 }
