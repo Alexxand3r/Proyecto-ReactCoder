@@ -1,4 +1,3 @@
-import React from "react";
 import CartWidget from "../CartWidget";
 import "./style.css";
 import Container from "react-bootstrap/Container";
@@ -17,7 +16,10 @@ const NavBar = () => {
       className="border border-3 border-info nav_bar"
     >
       <Container fluid>
-        <Navbar.Brand href="#home" className="fs-2 fw-bold text-info ms-4">
+        <Navbar.Brand
+          href="#home"
+          className="fs-2 fw-bold text-danger ms-4 mt-2"
+        >
           <img
             className="me-2"
             src="../../assets/dbs2.jpg"
@@ -27,11 +29,21 @@ const NavBar = () => {
           Mi Carrito Coder
         </Navbar.Brand>
         <Nav className="d-flex justify-content-center fs-3">
-          <Link to="/">Home</Link>
-          <Link to="/category/men's clothing">Men's clothing</Link>
-          <Link to="/category/women's clothing">Women's clothing</Link>
-          <Link to="/category/electronics">Electronics</Link>
-          <Link to="/category/jewelery">Jewelery</Link>
+          <Link className="nav-link text-info" to="/">
+            Home
+          </Link>
+          <Link className="nav-link" to="/category/men's clothing">
+            Men's clothing
+          </Link>
+          <Link className="nav-link" to="/category/women's clothing">
+            Women's clothing
+          </Link>
+          <Link className="nav-link" to="/category/electronics">
+            Electronics
+          </Link>
+          <Link className="nav-link " to="/category/jewelery">
+            Jewelery
+          </Link>
         </Nav>
         <Nav>
           <CartWidget />

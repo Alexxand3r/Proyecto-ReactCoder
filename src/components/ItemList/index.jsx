@@ -1,6 +1,5 @@
-import React from "react";
 import Item from "../Item";
-import "./style.scss";
+import "./style.css";
 
 const ItemList = ({ products }) => {
   return (
@@ -10,7 +9,7 @@ const ItemList = ({ products }) => {
           return <Item key={product.id} product={product} />;
         })
       ) : (
-        <h2>Loading...</h2>
+        <h2 className="fs-1 text-info mt-5">Loading... 🙄</h2>
       )}
     </div>
   );
