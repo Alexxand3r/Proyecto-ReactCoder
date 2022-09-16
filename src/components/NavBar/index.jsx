@@ -5,10 +5,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Shop } from "../../context/ShopProvider";
 
 const NavBar = () => {
+  const value = useContext(Shop);
+  console.log(value);
+
   return (
     <Navbar
       bg="dark"
@@ -47,6 +51,7 @@ const NavBar = () => {
         </Nav>
         <Nav>
           <CartWidget />
+          <span>{value.mensaje}</span>
           <Form className="d-flex me-4">
             <Form.Control
               type="search"
