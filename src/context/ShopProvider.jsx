@@ -5,7 +5,7 @@ export const Shop = createContext();
 
 const ShopProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [cantidadTotal, setcantidadTotal] = useState(0);
+  //const [cantidadTotal, setcantidadTotal] = useState(0);
   const addItem = (item) => {
     const productoRepetido = isInCart(item.id);
     console.log(productoRepetido);
@@ -28,8 +28,8 @@ const ShopProvider = ({ children }) => {
     return cart.some((product) => product.id === id);
   };
 
-  const removeItem = (itemId) => {
-    //Recibe el itemId y lo borra
+  /*const removeItem = (itemId) => {
+    
     const itemChoice = cart.filter((e) => e.item.id === itemId);
     const auxQuantity = cantidadTotal - itemChoice[0].quantity;
     const newCart = cart.filter((e) => e.item.id !== itemId);
@@ -41,7 +41,7 @@ const ShopProvider = ({ children }) => {
     setCart([]);
     setcantidadTotal(0);
   };
-
+*/
   return <Shop.Provider value={{ cart, addItem }}>{children}</Shop.Provider>;
 };
 

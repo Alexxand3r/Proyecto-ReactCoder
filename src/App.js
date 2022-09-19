@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import Cart from "./containers/CartContainer";
 import ShopProvider from "./context/ShopProvider";
-//import Home from "./components/Home";
 
 function App() {
   return (

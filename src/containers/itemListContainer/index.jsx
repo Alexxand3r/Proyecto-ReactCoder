@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { products } from '../../data/products';
 import ItemList from "../../components/ItemList";
 import { useParams } from "react-router-dom";
+//import Home from "../../components/Home/Home";
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -30,9 +31,13 @@ const ItemListContainer = ({ greeting }) => {
     })();
   }, [categoryId]);
 
-  console.log(productos);
-
-  return <ItemList products={productos} />;
+  return (
+    <>
+      {/* <Home />*/}
+      <h1 className="text-center text-danger fw-bold  mt-3">Latest Products</h1>
+      <ItemList products={productos} />;
+    </>
+  );
 };
 
 export default ItemListContainer;

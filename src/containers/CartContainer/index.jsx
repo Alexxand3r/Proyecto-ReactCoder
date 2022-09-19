@@ -1,4 +1,4 @@
-import Item from "../../components/Item";
+//import Item from "../../components/Item";
 
 const Cart = (product) => {
   console.log(product);
