@@ -7,8 +7,6 @@ const ItemDetailContainer = () => {
 
   const { productId } = useParams();
 
-  console.log(productId);
-
   useEffect(() => {
     const getProducts = async () => {
       try {
@@ -23,8 +21,6 @@ const ItemDetailContainer = () => {
     };
     getProducts();
   }, [productId]);
-
-  console.log(productDetail);
 
   return <ItemDetail product={productDetail} />;
 };
