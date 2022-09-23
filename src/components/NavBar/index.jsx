@@ -64,17 +64,6 @@ const NavBar = () => {
         <Nav>
           <CartWidget />
 
-          <Form className="d-flex me-4">
-            <Form.Control
-              type="search"
-              placeholder="Buscar"
-              className="me-2 fs-5 "
-              aria-label="Buscar"
-            />
-            <Button variant="outline-info">
-              <i className="fa fa-search"></i>
-            </Button>
-          </Form>
           <Button variant="outline-info me-2" onClick={handleLogin}>
             {" "}
             <i className="fa fa-sign-in me-1"></i>Login
