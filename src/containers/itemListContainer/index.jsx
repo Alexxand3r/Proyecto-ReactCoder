@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import { products } from '../../data/products';
 import ItemList from "../../components/ItemList";
 import { useParams } from "react-router-dom";
 
@@ -17,6 +18,7 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     (async () => {
       try {
+        //Ajustamos la query según el param que viene desde la navegación
         const q = categoryId
           ? query(
               collection(db, "products"),
@@ -24,10 +26,12 @@ const ItemListContainer = ({ greeting }) => {
             )
           : query(collection(db, "products"));
 
+        //2do realizar el llamado a firebase
         const querySnapshot = await getDocs(q);
         const productosFirebase = [];
-
+        //3ero obtener el "snapshot" con los datos crudos.
         querySnapshot.forEach((doc) => {
+          // doc.data() is never undefined for query doc snapshots
           productosFirebase.push({ id: doc.id, ...doc.data() });
         });
         console.log(productosFirebase);
@@ -44,13 +48,7 @@ const ItemListContainer = ({ greeting }) => {
     })();
   }, [categoryId]);
 
-  return (
-    <>
-      {/* <Home />*/}
-      <h1 className="text-center text-danger fw-bold  mt-3">Latest Products</h1>
-      <ItemList products={productos} />;
-    </>
-  );
+  return <ItemList products={productos} />;
 };
 
 export default ItemListContainer;

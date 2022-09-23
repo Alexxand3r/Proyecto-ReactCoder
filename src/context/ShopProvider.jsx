@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { createContext } from "react";
 
+//Primero declara el context
 export const Shop = createContext();
 
+//Paso dos, crear el provider (proveedor) que me va a envolver a la aplicación
 const ShopProvider = ({ children }) => {
+  //Dentro del context irían: estados, efectos y funciones auxiliares
   const [cart, setCart] = useState([]);
-  //const [cantidadTotal, setcantidadTotal] = useState(0);
+
   const addItem = (item) => {
     const productoRepetido = isInCart(item.id);
     console.log(productoRepetido);
@@ -28,21 +31,23 @@ const ShopProvider = ({ children }) => {
     return cart.some((product) => product.id === id);
   };
 
-  /*const removeItem = (itemId) => {
-    
-    const itemChoice = cart.filter((e) => e.item.id === itemId);
-    const auxQuantity = cantidadTotal - itemChoice[0].quantity;
-    const newCart = cart.filter((e) => e.item.id !== itemId);
-    setCart(newCart);
-    setcantidadTotal(auxQuantity);
+  //Completar la lógica
+  const removeItem = (itemToRemove) => {
+    const filteredProducts = cart.filter((item) => item !== itemToRemove);
+    setCart(filteredProducts);
   };
 
   const clearCart = () => {
     setCart([]);
-    setcantidadTotal(0);
   };
-*/
-  return <Shop.Provider value={{ cart, addItem }}>{children}</Shop.Provider>;
+
+  // const [mensaje, setMensaje] = useState("Hola")
+
+  return (
+    <Shop.Provider value={{ cart, addItem, removeItem, clearCart }}>
+      {children}
+    </Shop.Provider>
+  );
 };
 
 export default ShopProvider;

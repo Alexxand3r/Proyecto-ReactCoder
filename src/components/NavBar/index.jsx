@@ -6,13 +6,25 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { Shop } from "../../context/ShopProvider";
+import { useState } from "react";
+//import { Shop } from "../../context/ShopProvider";
+import AuthContainer from "../../containers/AuthContainer";
 
 const NavBar = () => {
-  const value = useContext(Shop);
-  console.log(value);
+  //Nombre del estado, setNombreDelEstado
 
+  // const value = useContext(Shop)
+
+  const [loginModal, setLoginModal] = useState(false);
+  const [signupModal, setSignupModal] = useState(false);
+
+  const handleLogin = () => {
+    setLoginModal(true);
+  };
+
+  const handleSignup = () => {
+    setSignupModal(true);
+  };
   return (
     <Navbar
       bg="dark"
@@ -51,7 +63,7 @@ const NavBar = () => {
         </Nav>
         <Nav>
           <CartWidget />
-          <span>{value.mensaje}</span>
+
           <Form className="d-flex me-4">
             <Form.Control
               type="search"
@@ -63,16 +75,26 @@ const NavBar = () => {
               <i className="fa fa-search"></i>
             </Button>
           </Form>
-          <Button variant="outline-info me-2">
+          <Button variant="outline-info me-2" onClick={handleLogin}>
             {" "}
             <i className="fa fa-sign-in me-1"></i>Login
           </Button>
-          <Button variant="outline-info me-3">
+          <Button variant="outline-info me-3" onClick={handleSignup}>
             {" "}
             <i className="fa fa-user-plus me-1"></i>Registrate
           </Button>
         </Nav>
       </Container>
+      {(loginModal || signupModal) && (
+        <AuthContainer
+          handleClose={() => {
+            setLoginModal(false);
+            setSignupModal(false);
+          }}
+          login={loginModal}
+          signUp={signupModal}
+        />
+      )}
     </Navbar>
   );
 };
