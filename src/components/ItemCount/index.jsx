@@ -26,17 +26,23 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div className="contenedor-botones">
       <button
-        className="botones btn btn-info text-white"
+        className="botones btn btn-info text-white fs-4 px-3 fw-bold"
         onClick={handleDecrement}
       >
         -
       </button>
-      <h2 className="mx-3 mt-3">{count}</h2>
-      <button className="botones btn btn-info text-white" onClick={handleAdd}>
+      <h2 className="mx-3 my-3">{count}</h2>
+      <button
+        className="botones btn btn-info text-white fs-4 fw-bold"
+        onClick={handleAdd}
+      >
         +
       </button>
-      <button className="botones btn btn-info text-white" onClick={addCart}>
-        Agregar al carrito
+      <button
+        className="botones btn btn-info text-white fs-4 fw-bold"
+        onClick={addCart}
+      >
+        <i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar
       </button>
     </div>
   );

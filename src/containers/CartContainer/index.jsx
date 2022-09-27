@@ -1,10 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Shop } from "../../context/ShopProvider";
+import ordenGenerada from "../../services/generarOrden";
+
 import { DataGrid } from "@mui/x-data-grid";
-import { Button } from "@mui/material";
+import { Button, CircularProgress } from "@mui/material";
+import { collection, addDoc } from "firebase/firestore";
+import { doc, updateDoc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase/config";
+import Swal from "sweetalert2";
 
 const Cart = () => {
-  const { cart, removeItem, clearCart } = useContext(Shop);
+  const { cart, removeItem, clearCart, total } = useContext(Shop);
+
+  const [loading, setLoading] = useState(false);
 
   const renderImage = (image) => {
     return (
@@ -24,9 +32,49 @@ const Cart = () => {
         variant="contained"
         color="error"
       >
-        Remove
+        <i class="fa fa-times  fs-5"></i>
       </Button>
     );
+  };
+
+  const handleBuy = async () => {
+    setLoading(true);
+    const importeTotal = total();
+    const orden = ordenGenerada(
+      "Alexander",
+      "Alelis123@gmail.com",
+      2612123456,
+      cart,
+      importeTotal
+    );
+    console.log(orden);
+
+    // Add a new document with a generated id.
+    const docRef = await addDoc(collection(db, "orders"), orden);
+
+    //Actualizamos el stock del producto
+    cart.forEach(async (productoEnCarrito) => {
+      //Primero accedemos a la referencia del producto
+      const productRef = doc(db, "products", productoEnCarrito.id);
+      //Llamamos al snapshot, llamando a firebase
+      const productSnap = await getDoc(productRef);
+      //En snapshot.data() nos devuelve la información del documento a actualizar
+      await updateDoc(productRef, {
+        stock: productSnap.data().stock - productoEnCarrito.quantity,
+      });
+    });
+    setLoading(false);
+
+    Swal.fire({
+      title: "Compra Confirmada ✔",
+      text: `Orden Id: ${docRef.id} 😀 `,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJbrkJBEtHDIyxb1feZQan0nza1LCUlV6Dg&usqp=CAU",
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: "Compra Confirmada",
+      confirmButtonText: "Ok!",
+    });
   };
 
   const columns = [
@@ -38,6 +86,7 @@ const Cart = () => {
     },
     { field: "title", headerName: "Product", width: 450 },
     { field: "quantity", headerName: "Quantity", width: 80 },
+    { field: "price", headerName: "Price", width: 80 },
     {
       field: "remove",
       headerName: "Remove",
@@ -54,6 +103,7 @@ const Cart = () => {
       image: item.image,
       title: item.title,
       quantity: item.quantity,
+      price: `$ ${item.price * item.quantity}`,
       remove: item,
     });
   });
@@ -65,11 +115,43 @@ const Cart = () => {
         columns={columns}
         pageSize={10}
         rowsPerPageOptions={[10]}
-        rowHeight={"150px"}
+        rowHeight={150}
       />
-      <Button onClick={clearCart} color="error" variant="outlined">
-        Clear cart
-      </Button>
+
+      <div className="d-flex justify-content-start mt-2">
+        <Button
+          onClick={clearCart}
+          color="info"
+          variant="contained"
+          className="ms-5"
+        >
+          Clear cart<i className="fa fa-trash ms-2 fs-3"></i>
+        </Button>
+        {loading ? (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              width: "100%",
+              height: "100%",
+              alignItems: "center",
+            }}
+          >
+            <CircularProgress />
+          </div>
+        ) : (
+          <Button
+            onClick={handleBuy}
+            color="success"
+            variant="contained"
+            className="ms-5"
+          >
+            Confirmar compra <i className="fa fa-check ms-2 fs-3"></i>
+          </Button>
+        )}
+        <h2 className="ms-5 fs-2">Total Compra : $ 123 </h2>
+      </div>
     </div>
   );
 };

@@ -30,8 +30,13 @@ const ItemDetail = ({ product }) => {
       <div className="p-3 sub-container">
         <h2 className="text-center text-info fw-bold fs-1">{product.title}</h2>
         <p className="descripcion">{product.description}</p>
-        <h3 className="precio">$ {product.price}</h3>
-
+        <div className="d-flex">
+          <h3 className="precio">$ {product.price}</h3>
+          <h4 className="ms-5 mt-3">
+            Stock Disponible:
+            <span className="text-primary ms-2 fs-3">{product.stock}</span>{" "}
+          </h4>
+        </div>
         {qty ? (
           <button
             className="btn btn-info text-white fw-bold fs-3"
@@ -40,7 +45,7 @@ const ItemDetail = ({ product }) => {
             Finalizar Compra
           </button>
         ) : (
-          <ItemCount stock={10} initial={1} onAdd={addCart} />
+          <ItemCount stock={product.stock} initial={1} onAdd={addCart} />
         )}
       </div>
     </div>
