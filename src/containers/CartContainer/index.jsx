@@ -32,7 +32,7 @@ const Cart = () => {
         variant="contained"
         color="error"
       >
-        <i class="fa fa-times  fs-5"></i>
+        <i className="fa fa-times  fs-5"></i>
       </Button>
     );
   };
@@ -67,7 +67,7 @@ const Cart = () => {
 
     Swal.fire({
       title: "Compra Confirmada ✔",
-      text: `Orden Id: ${docRef.id} 😀 `,
+      text: ` 😀 Total: 💲${total()} Orden Id: ${docRef.id}`,
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJbrkJBEtHDIyxb1feZQan0nza1LCUlV6Dg&usqp=CAU",
       imageWidth: 400,
@@ -80,16 +80,16 @@ const Cart = () => {
   const columns = [
     {
       field: "image",
-      headerName: "Image",
+      headerName: "imagen",
       width: 250,
       renderCell: renderImage,
     },
-    { field: "title", headerName: "Product", width: 450 },
-    { field: "quantity", headerName: "Quantity", width: 80 },
-    { field: "price", headerName: "Price", width: 80 },
+    { field: "title", headerName: "Articulo", width: 450 },
+    { field: "quantity", headerName: "Cantidad", width: 80 },
+    { field: "price", headerName: "Costo", width: 80 },
     {
       field: "remove",
-      headerName: "Remove",
+      headerName: "Borrar",
       renderCell: renderRemoveButton,
       width: 120,
     },
@@ -125,7 +125,7 @@ const Cart = () => {
           variant="contained"
           className="ms-5"
         >
-          Clear cart<i className="fa fa-trash ms-2 fs-3"></i>
+          Borrar Todo<i className="fa fa-trash ms-2 fs-3"></i>
         </Button>
         {loading ? (
           <div
@@ -145,12 +145,17 @@ const Cart = () => {
             onClick={handleBuy}
             color="success"
             variant="contained"
-            className="ms-5"
+            className="mx-5"
           >
             Confirmar compra <i className="fa fa-check ms-2 fs-3"></i>
           </Button>
         )}
-        <h2 className="ms-5 fs-2">Total Compra : $ 123 </h2>
+
+        <h3 className="me-5">
+          <strong className="">
+            Total: $<b>{total()}.-</b>
+          </strong>
+        </h3>
       </div>
     </div>
   );

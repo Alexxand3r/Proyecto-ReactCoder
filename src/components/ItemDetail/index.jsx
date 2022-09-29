@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import ItemCount from "../ItemCount";
 import { useNavigate } from "react-router-dom";
-import "./style.css";
 import { Shop } from "../../context/ShopProvider";
+import ItemCount from "../ItemCount";
+import "./style.css";
 
 const ItemDetail = ({ product }) => {
   const [qty, setQty] = useState(0);

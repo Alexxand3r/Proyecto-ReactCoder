@@ -42,7 +42,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         className="botones btn btn-info text-white fs-4 fw-bold"
         onClick={addCart}
       >
-        <i class="fa fa-cart-plus" aria-hidden="true"></i> Agregar
+        <i className="fa fa-cart-plus" aria-hidden="true"></i> Agregar
       </button>
     </div>
   );

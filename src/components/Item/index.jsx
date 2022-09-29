@@ -1,7 +1,6 @@
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 
-//Corresponde a la card del producto
 const Item = ({ product }) => {
   const navigate = useNavigate();
 

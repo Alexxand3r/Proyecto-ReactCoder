@@ -1,20 +1,15 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import AuthContainer from "../../containers/AuthContainer";
 import CartWidget from "../CartWidget";
-import "./style.css";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-//import { Shop } from "../../context/ShopProvider";
-import AuthContainer from "../../containers/AuthContainer";
+import "./style.css";
 
 const NavBar = () => {
-  //Nombre del estado, setNombreDelEstado
-
-  // const value = useContext(Shop)
-
   const [loginModal, setLoginModal] = useState(false);
   const [signupModal, setSignupModal] = useState(false);
 
