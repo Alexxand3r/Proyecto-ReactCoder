@@ -1,17 +1,19 @@
 import React, { useContext, useState } from "react";
-import { Shop } from "../../context/ShopProvider";
+import { useNavigate } from "react-router-dom";
 import ordenGenerada from "../../services/generarOrden";
+import { Shop } from "../../context/ShopProvider";
 
 import { DataGrid } from "@mui/x-data-grid";
+import Swal from "sweetalert2";
+
 import { Button, CircularProgress } from "@mui/material";
 import { collection, addDoc } from "firebase/firestore";
 import { doc, updateDoc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/config";
-import Swal from "sweetalert2";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const { cart, removeItem, clearCart, total } = useContext(Shop);
-
   const [loading, setLoading] = useState(false);
 
   const renderImage = (image) => {
@@ -47,18 +49,14 @@ const Cart = () => {
       cart,
       importeTotal
     );
-    console.log(orden);
 
-    // Add a new document with a generated id.
     const docRef = await addDoc(collection(db, "orders"), orden);
 
-    //Actualizamos el stock del producto
     cart.forEach(async (productoEnCarrito) => {
-      //Primero accedemos a la referencia del producto
       const productRef = doc(db, "products", productoEnCarrito.id);
-      //Llamamos al snapshot, llamando a firebase
+
       const productSnap = await getDoc(productRef);
-      //En snapshot.data() nos devuelve la información del documento a actualizar
+
       await updateDoc(productRef, {
         stock: productSnap.data().stock - productoEnCarrito.quantity,
       });
@@ -75,6 +73,12 @@ const Cart = () => {
       imageAlt: "Compra Confirmada",
       confirmButtonText: "Ok!",
     });
+    clearCart();
+    setLoading(true);
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
+    setLoading(false);
   };
 
   const columns = [
@@ -95,7 +99,6 @@ const Cart = () => {
     },
   ];
 
-  //Vamos a asignar un array con cada fila de la tabla, utilizando el cart
   const filas = [];
   cart.forEach((item) => {
     filas.push({

@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Shop } from "../../context/ShopProvider";
+
 import ItemCount from "../ItemCount";
+import { Shop } from "../../context/ShopProvider";
+
 import "./style.css";
 
 const ItemDetail = ({ product }) => {
@@ -19,8 +21,6 @@ const ItemDetail = ({ product }) => {
     addItem(productToSave);
     navigate("/cart");
   };
-
-  console.log(qty);
 
   return (
     <div className="container my-5 border border-2 border-info rounded p-3">
