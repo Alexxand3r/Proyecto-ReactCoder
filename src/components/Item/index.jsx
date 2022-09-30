@@ -14,12 +14,12 @@ const Item = ({ product }) => {
         <img
           className="card-img-top mb-5"
           src={product.image}
-          height={250}
+          height={350}
           alt={product.title}
         />
         <div className="card-body">
-          <h5 className="card-title mb-0 fs-2 text-primary">
-            {product.title.substring(0, 15)}
+          <h5 className="card-title mb-0  text-primary">
+            {product.title.substring(0, 25)}
           </h5>
           <h3 className="card-price mt-3">Precio: $ {product.price}</h3>
           <h4 className="mt-2">

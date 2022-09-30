@@ -1,6 +1,8 @@
-import React from "react";
-import ItemList from "../../components/ItemList";
 import { useParams } from "react-router-dom";
+
+import ItemList from "../../components/ItemList";
+import Spinner from "../../components/Spinner";
+
 import useFirebase from "../../hooks/useFirebase";
 
 const ItemListContainer = () => {
@@ -9,7 +11,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      {loading ? <h2>Loading ...</h2> : <ItemList products={productos} />}
+      {loading ? <Spinner /> : <ItemList products={productos} />}
       {error && <h2>{error}</h2>}
     </>
   );

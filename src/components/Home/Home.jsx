@@ -8,8 +8,8 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              height={650}
-              src="../../assets/bvsf.jpg"
+              height={120}
+              src="../../assets/venum.webp"
               alt="foto hero prueba"
             />
             <Carousel.Caption>
@@ -19,8 +19,8 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              height={650}
-              src="../../assets/dbs1.jpg"
+              height={120}
+              src="../../assets/venum.webp"
               alt="foto hero prueba"
             />
             <Carousel.Caption>
@@ -30,9 +30,9 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="../../assets/dbs2.jpg"
+              src="../../assets/venum.webp"
               alt="foto hero"
-              height={650}
+              height={120}
             />
 
             <Carousel.Caption>

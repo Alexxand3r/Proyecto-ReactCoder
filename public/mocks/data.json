@@ -4,228 +4,180 @@
     "title": "KIMONO BJJ VENUM CONTENDER EVO - BLANCO",
     "price": 109.99,
     "description": "¡El Kimono BJJ Contender Evo es imprescindible para los practicantes de Jiu Jitsu Brasileño que busquen un kimono con una excelente relación calidad/precio!",
-    "category": "men's clothing",
+    "category": "mens",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/f_252Fd_252Fc_252F2_252Ffdc28037c344862bc866bb89042d82ca019213ac_BJJ_GI_CONTENDER_EVO_WHITE_1500_12.jpg?v=1643995486",
-    "rating": {
-      "rate": 3.9
-    }
+    "rate": 3.9
   },
   {
     "id": 2,
     "title": "KIMONO BJJ VENUM CONTENDER EVO - NEGRO",
     "price": 113.99,
     "description": "¡El Kimono BJJ Contender Evo es imprescindible para los practicantes de Jiu Jitsu Brasileño que busquen un kimono con una excelente relación calidad/precio!",
-    "category": "men's clothing",
+    "category": "mens",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/d_252F4_252F5_252F7_252Fd457e475a112a38923cb0dcca6178a8edc5b1313_BJJ_GI_CONTENDER_EVO_BLACK_BLACK_1500_12_1080x.jpg?v=1643995468",
-    "rating": {
-      "rate": 4.1
-    }
+    "rate": 4.1
   },
   {
     "id": 3,
     "title": "VENUM CONTENDER 3.0 JOGGERS",
     "price": 27.99,
     "description": "Estos  pantalones ofrecen un excelente aislamiento y proporcionan una gestión óptima del calor corporal; e incluye un sistema de ajuste en la cintura que te asegurará un ajuste y sujeción perfectos.Los joggers Contender 3 cuentan con dos bolsillos laterales y un bolsillo trasero con cremallera, lo que le permite almacenar y transportar sus objetos de valor de forma segura.",
-    "category": "men's clothing",
+    "category": "mens",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/JOGGING_CONTENDER3.0_BLACK_BLACK_HD_02_720x.jpg?v=1643995304",
-    "rating": {
-      "rate": 4.7
-    }
+    "rate": 4.7
   },
   {
     "id": 4,
     "title": "CAMISETA VENUM MMA VT ",
     "price": 15.99,
     "description": "Las camisetas Venum MMA VT presentan un corte ajustado que ofrece la máxima comodidad y un estilo inigualable.Las camisetas Venum MMA VT son buenas tanto para un look casual como para sesiones de entrenamiento.",
-    "category": "men's clothing",
+    "category": "mens",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/5_252Fe_252F9_252Fb_252F5e9b52faa7593b2d1829c57ec363350b4662e4fc_TS_VT_MMA_BLACK_WHITE_HD_02_720x.jpg?v=1644001913",
-    "rating": {
-      "rate": 2.1
-    }
+    "rate": 2.1
   },
   {
     "id": 5,
     "title": "PROTECTOR BUCAL VENUM CHALLENGER",
     "price": 15,
     "description": "Nuestro protector bucal Venum Challenger,es nuevo y mejorado para brindarle un ajuste personalizado perfecto mientras lo mantiene seguro y se asegura de que todo en su boca permanezca en su lugar.El diseño de ajuste personalizado ayuda a prevenir lesiones y mejora su rendimiento .",
-    "category": "jewelery",
+    "category": "articulos",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/a_252Fe_252Ff_252F5_252Faef5796d8404054ba1da8f67f21b1e10b312250b_MOUTHGARD_CHALLENGER_BLACK_RED_SD_01_720x.jpg?v=1650557028",
-    "rating": {
-      "rate": 4.6
-    }
+    "rate": 4.6
   },
   {
     "id": 6,
     "title": "CASCO VENUM CHALLENGER 2.0",
     "price": 69.99,
     "description": "Enfréntate a desafíos más grandes y mejores con nuestro casco Venum Challenger 2.0 .Este casco le brindará la protección más perfecta para la cabeza a un precio asequible.",
-    "category": "jewelery",
+    "category": "articulos",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/6_252Fb_252F3_252F7_252F6b373458b27bc88e41b66257be643a7bcacf2daf_headgear_challnger_2_0_black_black_hd_01_1080x.jpg?v=1643994333",
-    "rating": {
-      "rate": 3.9
-    }
+    "rate": 3.9
   },
   {
     "id": 7,
     "title": "GUANTES DE BOXEO VENUM GIANT 3.0 ",
     "price": 169.99,
     "description": "Guantes de Boxeo Venum GIANT 3.0 Edición Limitada - Negro : están diseñados para el rendimiento.La construcción ergonómica y la flexibilidad de las espumas y el cuero garantizan total libertad de movimiento dentro del guante y limitan la fatiga.",
-    "category": "jewelery",
+    "category": "articulos",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/b_252Fa_252F2_252F5_252Fba25694c1883529c7bd2dc7f4760dd3323f8d994_BG_GIANT_3.0_BLACK_BURGUNDY_GOLD_01_720x.jpg?v=1658415204",
-    "rating": {
-      "rate": 5
-    }
+    "rate": 5
   },
   {
     "id": 8,
     "title": "ESPINILLERAS VENUM ELITE EVO",
     "price": 109.99,
     "description": "Las espinilleras Venum Elite Evo son una evolución de la gama Venum Elite, que sigue siendo uno de nuestros guantes más populares. Los Elite Evos han sido diseñados para ser aún más duraderos y soportar un uso intensivo continuo",
-    "category": "jewelery",
+    "category": "articulos",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/7_252Fb_252Fb_252F6_252F7bb61930da4654f0e84f4a6746b1395b26ebead6_SHINGUARDS_ELITE_EVO_WHITE_GOLD_01_6d8b89d1-9518-417d-9356-1b323c93915d_720x.jpg?v=1643999422",
-    "rating": {
-      "rate": 1.9
-    }
+    "rate": 2.9
   },
   {
     "id": 9,
     "title": "PANTALONES  DE LUCHA VENUM DRAGON'S",
     "price": 17.99,
     "description": "¡ Los pantalones cortos de lucha Dragon's Flight Kids (8-14 años) son cómodos y llenos de estilo!¡Un diseño poderoso para adultos para complacer a los más jóvenes y ayudarlos a lograr sus sueños!",
-    "category": "electronics",
+    "category": "kids",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/f_252F8_252Fd_252F7_252Ff8d784551b92f629bac8f56c6e861a38f18c9142_fs_kids_dragon_flight_black_white_1500_00_4e3da76c-5640-4678-9a6c-48c790e8c07b_720x.jpg?v=1643998856",
-    "rating": {
-      "rate": 3.3
-    }
+    "rate": 3.3
   },
   {
     "id": 10,
     "title": "PANTALONES DE LUCHA VENUM TEMPEST 2.0",
     "price": 69,
     "description": "Shorts de combate Venum Tempest 2.0: ¡arrasa con ellos!Los pantalones cortos de combate ligeros Venum Tempest 2.0 te ayudarán a estar más afilado y más rápido que nunca gracias a su exclusivo atajo. ¡Que no te atrapen más, nunca dejes de moverte en la alfombra y arrástralo!",
-    "category": "electronics",
+    "category": "kids",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/8_252F2_252Fb_252Fc_252F82bc80e346a8283743b396dab45bf428aa30d8a4_fs_court_black_white_1500_02_1080x.jpg?v=1658484254",
-    "rating": {
-      "rate": 2.9
-    }
+
+    "rate": 3.9
   },
   {
     "id": 11,
     "title": "KIMONO DE BJJ PARA NIÑOS VENUM CONTENDER",
     "price": 89.99,
     "description": "El kimono Venum Contender Kids le brinda a su hijo la máxima comodidad y fuerza que le permitirán desarrollarse por completo.La chaqueta está reforzada en las axilas para asegurar la unión chaqueta-manga, y también a nivel de la parte inferior de la chaqueta, para evitar roturas.",
-    "category": "electronics",
+    "category": "kids",
     "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/a_252Fb_252Fc_252F3_252Fabc37577fa727e4bc9a8a75df05f0b72a206f872_kimono_contender_kids_black_1500_00_1_1080x.jpg?v=1643995532",
-    "rating": {
-      "rate": 4.8
-    }
+    "rate": 4.8
   },
   {
     "id": 12,
-    "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+    "title": "PANTALONES MUAY THAI  NIÑOS -BANGKOK INFERNO ",
     "price": 114,
-    "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-    "category": "electronics",
-    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
-    "rating": {
-      "rate": 4.8,
-      "count": 400
-    }
+    "description": "Ligeros y duraderos, estos pantalones cortos ayudarán a su hijo a mejorar su rendimiento en el boxeo tailandés.",
+    "category": "kids",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/b_252Fc_252F8_252F5_252Fbc859112e95cd2928c75a2e80077f372f7ca2c5d_SHORT_MUAY_THAI_KIDS_INFERNO_RED_WHITE_1500_00_fa87c8bb-6abc-4411-a563-cd4c6bc50cfe_720x.jpg?v=1643993883",
+    "rate": 4.8
   },
   {
     "id": 13,
-    "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+    "title": "PANTALON  MUAY THAI  NIÑO VENUM BANGKOK AMARILLO",
     "price": 599,
-    "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-    "category": "electronics",
-    "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-    "rating": {
-      "rate": 2.9,
-      "count": 250
-    }
+    "description": "Ligeros y duraderos, estos pantalones cortos ayudarán a su hijo a mejorar su rendimiento en el boxeo tailandés.Gracias a sus aberturas laterales, estos pantalones cortos ofrecen una notable movilidad que le permitirá a su hijo sobresalir durante los entrenamientos y las peleas.",
+    "category": "kids",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/7_252F3_252Ff_252F6_252F73f63d91a328f0ac200e0fffdeb3dc63e419ebed_SHORT_MUAY_THAI_KIDS_INFERNO_BLACK_YELLOW_1500_01_f99f76fc-3b21-453c-bd14-3f976fa9a828_1512x.jpg?v=1643993884",
+    "rate": 4.5
   },
   {
     "id": 14,
-    "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-    "price": 999.99,
-    "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-    "category": "electronics",
-    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-    "rating": {
-      "rate": 2.2,
-      "count": 140
-    }
+    "title": "GUANTES DE BOXEO VENUM ANGRY BIRDS",
+    "price": 39.99,
+    "description": "Guantes boxeo para niños, VENUM ANGRY BIRDS",
+    "category": "kids",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/b_252F2_252Ff_252F0_252Fb2f0b7ea2d1839b331b9e5b75256595d8d61e2dd_BG_HUNGRYBIRD_RED_03_1080x.jpg?v=1654789397",
+    "rate": 4.2
   },
   {
     "id": 15,
-    "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-    "price": 56.99,
-    "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-    "rating": {
-      "rate": 2.6,
-      "count": 235
-    }
+    "title": "GUANTES DE BOXEO VENUM CHALLENGER 2.0 - ROSA",
+    "price": 26.99,
+    "description": "Asequibles pero sin concesiones en la calidad, los guantes Challenger 2.0 están diseñados en Tailandia y son la elección perfecta para empezar a aprender a golpear.",
+    "category": "women",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/BOXING_GLOVES_CHALLENGER_PINK_HD_02_720x.jpg?v=1643994289",
+    "rate": 3.6
   },
   {
     "id": 16,
-    "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+    "title": "GUANTES DE FITNESS VENUM AERO BODY - ROSA NEÓN",
     "price": 29.95,
-    "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-    "rating": {
-      "rate": 2.9,
-      "count": 340
-    }
+    "description": "Los guantes de fitness Venum Aero Body están hechos de neopreno y cuentan con paneles de malla para garantizar una comodidad y ventilación superiores durante el ejercicio.Equipados con el sistema Venum Gel Shock, estos guantes de fitness Venum Body ofrecen una protección eficaz y absorción de impactos, para que estés cómodo durante todas las fases del entrenamiento .¡No te lo puedes perder!",
+    "category": "women",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/7_252Ff_252Fc_252Ff_252F7fcf09645da8cf76f06fff77ea5f86f63f425a3a_bodyc_gloves_essential_black_pink_1500_01_1__2_720x.jpg?v=1643993549",
+    "rate": 2.9
   },
   {
     "id": 17,
-    "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+    "title": "LEGGINGS VENUM SPARRING MUJER - BURDEOS",
     "price": 39.99,
-    "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
-    "rating": {
-      "rate": 3.8,
-      "count": 679
-    }
+    "description": "Usando la tela sin costuras más suave y detalles de ojales delicados, la colección Venum Sparring Seamless pone la comodidad primero.Estas mallas 7/8 de talle alto y resistentes a las sentadillas cuentan con texturas sutiles y compresión antideslizante. La longitud de 7/8 es ideal si mide menos de 162 cm (5'4) o prefiere el estilo recortado.",
+    "category": "women",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/LEGGINGS_7-8_SPARRING_BURGUNDY_07_720x.jpg?v=1660349196",
+    "rate": 3.8
   },
   {
     "id": 18,
-    "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+    "title": "SUJETADOR DEPORTIVO VENUM GLOW MUJER - NEGRO",
     "price": 9.85,
-    "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
-    "rating": {
-      "rate": 4.7,
-      "count": 130
-    }
+    "description": "El sujetador deportivo Venum Glow fue diseñado específicamente pensando en la comodidad y el estilo. El acolchado suave y flexible y la banda elástica brindan un buen soporte que se siente natural.Este sujetador es ideal para tus entrenamientos de yoga, estiramiento y fuerza y acondicionamiento.",
+    "category": "women",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/7_252Fc_252Fc_252F9_252F7cc98ff82afbaaf745ffa046beb451b8a63e90ed_SPORTBRA_GLOW_BLACK_11_1080x.jpg?v=1660263041",
+    "rate": 4.7
   },
   {
     "id": 19,
-    "title": "Opna Women's Short Sleeve Moisture",
-    "price": 7.95,
-    "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-    "rating": {
-      "rate": 4.5,
-      "count": 146
-    }
+    "title": "MOCHILA VENUM CHALLENGER PRO EVO - NEGRO/BLANCO",
+    "price": 67.95,
+    "description": "La mochila Venum Challenger Pro Evo se compone de 3 compartimentos para garantizar el almacenamiento ergonómico de sus pertenencias.Este bolso es adecuado para acompañarte tanto al gimnasio como a la ciudad.Para los practicantes de deportes de combate, tiene suficiente capacidad de almacenamiento para llevar tus guantes así como tus accesorios.",
+    "category": "articulos",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/5_252F9_252F1_252Fc_252F591c43b69cbeae011fa53afbb8eda2c233bf568c_BAGS_CHALLENGER_PRO_EVO_BACKPACK_BLACK_WHITE_SD_01_bccc579f-c2bd-433f-84c0-9049abf40bb4_720x.jpg?v=1643994609",
+    "rate": 4.5
   },
   {
     "id": 20,
-    "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-    "price": 12.99,
-    "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-    "rating": {
-      "rate": 3.6,
-      "count": 145
-    }
+    "title": "BOLSA VENUM TEAM - NEGRO",
+    "price": 69.99,
+    "description": "Este bolso tote es extremadamente práctico y resistente. Su gran capacidad te permite llevar todo lo necesario para tus sesiones: ropa, accesorios y botella de agua.Con una cremallera, esta bolsa mantendrá sus pertenencias seguras y protegidas.",
+    "category": "women",
+    "image": "https://cdn.shopify.com/s/files/1/0264/2218/1937/products/e_252F5_252Fe_252Fd_252Fe5edab481d93f107896754f6f2fd644c3126bf54_TOT_BAG_WOMEN_BLACK_01_a0a5b079-331c-4703-952c-048f60a10493_720x.jpg?v=1661377036",
+    "rate": 3.6
   }
 ]

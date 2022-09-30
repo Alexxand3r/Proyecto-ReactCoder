@@ -11,7 +11,7 @@ const useFirebase = (categoryId) => {
     (async () => {
       try {
         setLoading(true);
-        //Ajustamos la query según el param que viene desde la navegación
+
         const q = categoryId
           ? query(
               collection(db, "products"),
@@ -19,12 +19,10 @@ const useFirebase = (categoryId) => {
             )
           : query(collection(db, "products"));
 
-        //2do realizar el llamado a firebase
         const querySnapshot = await getDocs(q);
         const productosFirebase = [];
-        //3ero obtener el "snapshot" con los datos crudos.
+
         querySnapshot.forEach((doc) => {
-          // doc.data() is never undefined for query doc snapshots
           productosFirebase.push({ id: doc.id, ...doc.data() });
         });
         setProductos(productosFirebase);
