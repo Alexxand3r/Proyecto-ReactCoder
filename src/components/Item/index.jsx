@@ -21,14 +21,17 @@ const Item = ({ product }) => {
           <h5 className="card-title mb-0  text-primary">
             {product.title.substring(0, 25)}
           </h5>
-          <h3 className="card-price mt-3">Precio: $ {product.price}</h3>
+          <h5 className="mt-1">
+            <i class="fa fa-star" /> {product.rate}
+          </h5>
+          <h3 className="card-price mt-1">Precio: $ {product.price}</h3>
           <h4 className="mt-2">
             Stock Disponible:
             <span className="text-primary ms-2 fs-3">{product.stock}</span>{" "}
           </h4>
 
           <a href="#/" className="btn btn-primary fs-4 mt-3">
-            Ver <i className="fa fa-plus me-1 fs-4"></i>
+            Ver <i className="fa fa-plus me-1 fs-4" />{" "}
           </a>
         </div>
       </div>

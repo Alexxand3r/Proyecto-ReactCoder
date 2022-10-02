@@ -12,12 +12,13 @@
 .descripcion {
   margin-top: 1rem;
   font-size: 1rem;
-  margin-left: 1rem;
+
+  font-weight: bold;
 }
 .precio {
   display: flex;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -36,4 +37,6 @@
 .contador {
   display: flex;
   align-items: center;
+}
+.count {
 }
