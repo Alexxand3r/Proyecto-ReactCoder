@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+}
+
+.cart-style {
+  border: 2px solid #0dcaf0;
+  padding: 8px;
+  border-radius: 25px;
+}

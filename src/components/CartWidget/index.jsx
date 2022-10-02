@@ -1,12 +1,22 @@
-import Button from "react-bootstrap/Button";
+import { useContext } from "react";
+
+import { NavLink } from "react-router-dom";
+import { Shop } from "../../context/ShopProvider";
+import "./styles.css";
 
 const CartWidget = () => {
+  const { cart } = useContext(Shop);
+
+  console.log(cart);
   return (
-    <div className=" d-flex justify-content-end me-5 mt-1">
-      <Button variant="outline-info me-3">
+    <div className="cart-style d-flex justify-content-end me-5 mt-1 fs-1 text-info">
+      <NavLink to="/cart" variant="me-3">
         {" "}
-        <i className="fa fa-shopping-cart me-1"></i> ( 0 )
-      </Button>
+        <i className="fa fa-shopping-cart me-1 text-info" />
+        <span className="text-info ms-1">
+          {cart.length === 0 ? "" : cart.length}
+        </span>
+      </NavLink>
     </div>
   );
 };

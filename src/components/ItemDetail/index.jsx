@@ -36,6 +36,7 @@ const ItemDetail = ({ product }) => {
             Stock Disponible:
             <span className="text-primary ms-2 fs-3">{product.stock}</span>{" "}
           </h4>
+          <h5 className="precio ms-5">💗{product.rate}</h5>
         </div>
         {qty ? (
           <button
