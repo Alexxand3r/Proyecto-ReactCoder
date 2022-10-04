@@ -8,36 +8,26 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              height={120}
-              src="../../assets/venum.webp"
+              height={360}
+              src="../../assets/banner3.webp"
               alt="foto hero prueba"
             />
-            <Carousel.Caption>
-              <h3 className="text-info">Titulo 1</h3>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              height={120}
-              src="../../assets/venum.webp"
+              height={360}
+              src="../../assets/banner2.webp"
               alt="foto hero prueba"
             />
-            <Carousel.Caption>
-              <h3 className="text-info">Titulo 2</h3>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="../../assets/venum.webp"
+              src="../../assets/banner.webp"
               alt="foto hero"
-              height={120}
+              height={360}
             />
-
-            <Carousel.Caption>
-              <h3 className="text-info">Titulo 3</h3>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>

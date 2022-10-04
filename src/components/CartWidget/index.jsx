@@ -13,10 +13,10 @@ const CartWidget = () => {
       <NavLink to="/cart" variant="me-3">
         {" "}
         <i className="fa fa-shopping-cart me-1 text-info" />
-        <span className="text-info ms-1">
-          {cart.length === 0 ? "" : cart.length}
-        </span>
       </NavLink>
+      <span className="text-info ms-1">
+        {cart.length === 0 ? "" : cart.length}
+      </span>
     </div>
   );
 };

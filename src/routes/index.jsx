@@ -5,7 +5,8 @@ import NavBar from "../components/NavBar";
 import ItemDetailContainer from "../containers/ItemDetailContainer";
 import ItemListContainer from "../containers/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../components/Home/Home";
+import Home from "../components/Home";
+import Footer from "../components/footer";
 
 const Routing = () => {
   return (
@@ -19,6 +20,7 @@ const Routing = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

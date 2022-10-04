@@ -22,7 +22,7 @@ const Item = ({ product }) => {
             {product.title.substring(0, 25)}
           </h5>
           <h5 className="mt-1">
-            <i class="fa fa-star" /> {product.rate}
+            <i className="fa fa-star" /> {product.rate}
           </h5>
           <h3 className="card-price mt-1">Precio: $ {product.price}</h3>
           <h4 className="mt-2">
